@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADM Support System</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="principal.html"><i class="fa fa-fw fa-support"></i> ADM Support System</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-wrench"></i> Configurações</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="principal.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#clientes"><i class="fa fa-fw fa-user"></i> Clientes <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="clientes" class="collapse">
+                            <li>
+                                <a href="cadastrarClientes.html"><i class="fa fa-plus"></i> Cadastrar Clientes</a>
+                            </li>
+                            <li>
+                                <a href="consultarClientes.html"><i class="fa fa-search"></i> Consultar Clientes</a>
+                            </li>
+                        </ul>
+                    </li>                     
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#atendimento"><i class="fa fa-fw fa-headphones"></i> Atendimento <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="atendimento" class="collapse">
+                            <li>
+                                <a href="#"><i class="fa fa-plus"></i> Cadastrar Atendimento</a>
+                            </li>
+                            <li>
+                                <a href="consultarAtendimento.html"><i class="fa fa-search"></i> Consultar Atendimento</a>
+                            </li>
+                        </ul>
+                    </li>        
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Cadastro de Atendimento
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a href="principal.html">Dashboard</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-edit"></i> Cadastro de Atendimento
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <form action="" class="form-horizontal" method="POST">
+                        <fieldset>
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">Atendimento</div>
+                                <div class="panel-body">
+                                    <div class="col-md-11 control-label">
+                                        <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+                                    </div>
+
+                                    <!-- Razão Social -->
+                                    <div class="form-group">
+                                        <label for="Nome" class="col-md-2 control-label">Pesquisar Cliente</label>
+                                        <div class="col-md-5">
+                                            <input id="pesquisa" name="razao" placeholder="" class="form-control input-md" required="" type="text">
+                                        </div>
+                                        <div class="col-md-2">
+                                          <button type="button" class="btn btn-primary" onclick="">Pesquisar</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Razão Social</label>
+                                        <div class="col-md-5">
+                                            <input id="Razao" type="text" placeholder="Razão Social" required="" readonly="readonly" class="form-control input-md">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Codigo" class="col-md-2 control-label">Código <h11>*</h11></label>
+                                        <div class="col-md-2">
+                                            <input id="Razao" name="codigo" placeholder="" class="form-control input-md" required="" type="text" readonly="readonly">                                     
+                                        </div>
+                                    </div>
+
+                                    <!-- CNPJ -->
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="cnpj">CNPJ <h11>*</h11></label>  
+                                        <div class="col-md-2">
+                                            <input id="cnpj" name="cnpj" readonly="readonly" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="18" pattern="[0-9]+$">
+                                        </div>
+                                    </div>      
+
+                                    <!-- Telefones -->
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="Telefone">Telefone <h11>*</h11></label>
+                                        <div class="col-md-2">
+                                            <div class="input-group">
+                                              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                              <input id="telefone" name="telefone" class="form-control" readonly="readonly" placeholder="XX XXXX-XXXX" required="" type="text" maxlength="12" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                                              OnKeyPress="formatar('## ####-####', this)">
+                                            </div>
+                                        </div>
+                                          
+                                        <label class="col-md-1 control-label" for="Celular">Celular</label>
+                                        <div class="col-md-2">
+                                            <div class="input-group">
+                                              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                              <input id="celular" name="celular" class="form-control" readonly="readonly" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                                              OnKeyPress="formatar('## #####-####', this)">
+                                            </div>
+                                        </div>
+                                     </div>
+
+                                     <!-- E-mail -->
+                                     <div class="form-group">
+                                          <label class="col-md-2 control-label" for="email">Email <h11>*</h11></label>
+                                          <div class="col-md-5">
+                                            <div class="input-group">
+                                              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                              <input id="email" name="email" class="form-control" readonly="readonly" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="form-group">
+                                        <label for="codigoAtendimento" class="col-md-2 control-label">Código de Atendimento <h11>*</h11></label>
+                                        <div class="col-md-2">
+                                            <input id="codigoAtendimento" name="codigoAtendimento" class="form-control" placeholder="Exemplo: 0000252017" required="" type="text">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="" class="col-xs-3 control-label">Tipo <h11>*</h11></label>                                          
+                                            <div class="col-xs-8 selectContainer">
+                                                <select class="form-control" name="tipo">
+                                                    <option value="0">Choose a color</option>
+                                                    <option value="1">Black</option>
+                                                    <option value="2">Green</option>
+                                                    <option value="3">Red</option>
+                                                    <option value="4">Yellow</option>
+                                                    <option value="5">White</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label for="Descricao" class="col-md-2 control-label">Descrição <h11>*</h11></label>
+                                        <div class="col-md-5">
+                                            <input id="descricao" name="descricao" class="form-control" placeholder="Descrição do Atendimento" required="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group"><!-- pensar num nome melhor pro id desse campo -->
+                                        <label for="userAtendimento" class="col-md-2 control-label">Nome do usuário que solicitou suporte <h11>*</h11></label>
+                                        <div class="col-md-5">
+                                            <input id="userAtendimento" name="userAtendimento" class="form-control" required="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="solucao" class="col-md-2 control-label">Solucao <h11>*</h11></label>
+                                        <div class="col-md-2">
+                                            <textarea name="solucao" id="solucao" cols="91" rows="10" placeholder="Descrição detalhada da solução dada ao problema apresentado pelo usuário."></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">                                        
+                                        <label for="Status" class="col-md-2 control-label">Status <h11>*</h11></label>
+                                        <div class="selectContainer">
+                                            <div class="col-md-3">
+                                                <select class="form-control" name="status">
+                                                    <option value="0">Não Resolvido</option>
+                                                    <option value="1">Pendente (Aguardando resposta do desenvolvimento)</option>
+                                                    <option value="2">Resolvido</option>                            
+                                                </select>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+
+                                 
+
+                                    <!-- Button (Double) -->
+                                    <br><br><br>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="Cadastrar"></label>
+                                        <div class="col-md-8">
+                                            <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+                                            <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+                                        </div>
+                                    </div>
+
+                                </div>                                
+                            </div>                    
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
