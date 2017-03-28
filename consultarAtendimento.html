@@ -51,93 +51,13 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu alert-dropdown">
-                        <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">View All</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                            <a href="perfilUsuario.html"><i class="fa fa-fw fa-user"></i> Perfil</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-"></i> Configurações</a>
+                            <a href="#"><i class="fa fa-fw fa-wrench"></i> Configurações</a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -186,11 +106,391 @@
 
             <div class="container-fluid">
 
-                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Consulta de Atendimentos
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a href="principal.html">Dashboard</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-edit"></i> Consulta de Atendimento
+                            </li>
+                        </ol>
+                    </div>
+                </div>
 
-            </div>
-            <!-- /.container-fluid -->
+                <div class="row"><!-- Início Tabela de Atendimento -->
+                    <div id="top">
+                        <div class="col-md-3">
+                            <h2>Atendimentos</h2>
+                        </div>
+                     
+                        <div class="col-md-6">
+                            <div class="input-group h2">
+                                <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Itens">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit">
+                                        <span class="fa fa-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                     
+                        <div class="col-md-3">
+                            <a href="cadastrarAtendimento.html" class="btn btn-primary pull-right h2">Novo Atendimento</a>
+                        </div>
+                    </div> <!-- /#top -->
 
+                    <div id="list">
+                        <div class="table-responsive col-md-12">
+                            <table class="table table-striped" cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Descrição</th>
+                                        <th>Cliente</th>
+                                        <th>Data</th>
+                                        <th class="actions">Ações</th>
+                                     </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>201702ALU</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                        <td>Alumatech Comérico de Alumínio LTDA.</td>
+                                        <td>28/03/2017</td>
+                                        <td class="actions">
+                                            <a class="btn btn-success btn-xs" href="#" data-toggle="modal" data-target="#view-modal">Visualizar</a>
+                                            <a class="btn btn-warning btn-xs" href="#" data-toggle="modal" data-target="#edit-modal">Editar</a>
+                                            <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>                    
+                        </div>
+                    </div> <!-- /#list -->
+
+                    <div id="bottom">
+                        <div class="col-md-12">
+                             
+                            <ul class="pagination">
+                                <li class="disabled"><a><< Anterior</a></li>
+                                <li class="disabled"><a>1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li class="next"><a href="#" rel="next">Próximo >></a></li>
+                            </ul><!-- /.pagination -->
+                     
+                        </div>
+                    </div> <!-- /#bottom -->
+
+                    <!-- Modal Visualizar -->
+                    <div class="modal fade bd-example-modal-lg" id="view-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+                        <div class="modal-dialog modal-lg" tabindex="20" role="dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="modalLabel">Visualizar Detalhes do Atendimento Selecionado</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" class="form-horizontal" method="POST">
+                                        <fieldset>
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading">Atendimento</div>
+                                                <div class="panel-body">
+                                                    <div class="col-md-11 control-label">
+                                                        <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+                                                    </div>
+
+                                                    <!-- Razão Social -->
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label">Razão Social</label>
+                                                        <div class="col-md-7">
+                                                            <input id="Razao" type="text" placeholder="Razão Social" required="" readonly="readonly" class="form-control input-md">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="Codigo" class="col-md-2 control-label">Código <h11>*</h11></label>
+                                                        <div class="col-md-3">
+                                                            <input id="codigo" name="codigo" placeholder="" class="form-control input-md" required="" type="text" readonly="readonly">                                     
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- CNPJ -->
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label" for="cnpj">CNPJ <h11>*</h11></label>  
+                                                        <div class="col-md-4">
+                                                            <input id="cnpj" name="cnpj" readonly="readonly" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="18" pattern="[0-9]+$">
+                                                        </div>
+                                                    </div>      
+
+                                                    <!-- Telefones -->
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label" for="Telefone">Telefone <h11>*</h11></label>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group">
+                                                              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                              <input id="telefone" name="telefone" class="form-control" readonly="readonly" placeholder="XX XXXX-XXXX" required="" type="text" maxlength="12" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                                                              OnKeyPress="formatar('## ####-####', this)">
+                                                            </div>
+                                                        </div>
+                                          
+                                                        <label class="col-md-1 control-label" for="Celular">Celular</label>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group">
+                                                              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                              <input id="celular" name="celular" class="form-control" readonly="readonly" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                                                              OnKeyPress="formatar('## #####-####', this)">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                     <!-- E-mail -->
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label" for="email">Email <h11>*</h11></label>
+                                                        <div class="col-md-5">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                            <input id="email" name="email" class="form-control" readonly="readonly" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="form-group">
+                                                        <label for="codigoAtendimento" class="col-md-2 control-label">Código de Atendimento<h11>*</h11></label>
+                                                        <div class="col-md-4">
+                                                            <input id="codigoAtendimento" name="codigoAtendimento" class="form-control" placeholder="Exemplo: 0000252017" required="" type="text" readonly="readonly">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="tipo" class="col-xs-2 control-label">Tipo<h11>*</h11></label>                                          
+                                                            <div class="col-xs-10 selectContainer">
+                                                                <select class="form-control" name="tipo" disabled>
+                                                                    <option value="0">Choose a color</option>
+                                                                    <option value="1">Black</option>
+                                                                    <option value="2">Green</option>
+                                                                    <option value="3">Red</option>
+                                                                    <option value="4">Yellow</option>
+                                                                    <option value="5">White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label for="Descricao" class="col-md-2 control-label">Descrição <h11>*</h11></label>
+                                                        <div class="col-md-7">
+                                                            <input id="descricao" name="descricao" class="form-control" placeholder="Descrição do Atendimento" required="" type="text" readonly="readonly">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group"><!-- pensar num nome melhor pro id desse campo -->
+                                                        <label for="userAtendimento" class="col-md-2 control-label">Nome do usuário que solicitou suporte <h11>*</h11></label>
+                                                        <div class="col-md-7">
+                                                            <input id="userAtendimento" name="userAtendimento" class="form-control" required="" type="text" readonly="readonly">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="solucao" class="col-md-2 control-label">Solução <h11>*</h11></label>
+                                                        <div class="col-md-8">
+                                                            <textarea name="solucao" class="form-control" id="solucao" cols="91" rows="10" placeholder="Descrição detalhada da solução dada ao problema apresentado pelo usuário." readonly="readonly"></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">                                        
+                                                        <label for="Status" class="col-md-2 control-label">Status <h11>*</h11></label>
+                                                        <div class="selectContainer">
+                                                            <div class="col-md-3">
+                                                                <select class="form-control" name="status" disabled >
+                                                                    <option value="0">Não Resolvido</option>
+                                                                    <option value="1">Pendente (Aguardando resposta do desenvolvimento)</option>
+                                                                    <option value="2">Resolvido</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>                                    
+                                                    </div>
+                                                </div>                                
+                                            </div>                    
+                                        </fieldset>
+                                    </form>                                   
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Confirmar</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim Modal Visualizar-->
+
+                    <!-- Modal Editar -->
+                    <div class="modal fade bd-example-modal-lg" id="edit-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+                        <div class="modal-dialog modal-lg" tabindex="20" role="dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="modalLabel">Visualizar Detalhes do Atendimento Selecionado</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" class="form-horizontal" method="POST">
+                                        <fieldset>
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading">Atendimento</div>
+                                                <div class="panel-body">
+                                                    <div class="col-md-11 control-label">
+                                                        <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+                                                    </div>
+
+                                                    <!-- Razão Social -->
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label">Razão Social</label>
+                                                        <div class="col-md-7">
+                                                            <input id="Razao" type="text" placeholder="Razão Social" required="" readonly="readonly" class="form-control input-md">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="Codigo" class="col-md-2 control-label">Código <h11>*</h11></label>
+                                                        <div class="col-md-3">
+                                                            <input id="codigo" name="codigo" placeholder="" class="form-control input-md" required="" type="text" readonly="readonly">                                     
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- CNPJ -->
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label" for="cnpj">CNPJ <h11>*</h11></label>  
+                                                        <div class="col-md-4">
+                                                            <input id="cnpj" name="cnpj" readonly="readonly" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="18" pattern="[0-9]+$">
+                                                        </div>
+                                                    </div>      
+
+                                                    <!-- Telefones -->
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label" for="Telefone">Telefone <h11>*</h11></label>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group">
+                                                              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                              <input id="telefone" name="telefone" class="form-control" readonly="readonly" placeholder="XX XXXX-XXXX" required="" type="text" maxlength="12" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                                                              OnKeyPress="formatar('## ####-####', this)">
+                                                            </div>
+                                                        </div>
+                                          
+                                                        <label class="col-md-1 control-label" for="Celular">Celular</label>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group">
+                                                              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                              <input id="celular" name="celular" class="form-control" readonly="readonly" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                                                              OnKeyPress="formatar('## #####-####', this)">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                     <!-- E-mail -->
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label" for="email">Email <h11>*</h11></label>
+                                                        <div class="col-md-5">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                            <input id="email" name="email" class="form-control" readonly="readonly" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="form-group">
+                                                        <label for="codigoAtendimento" class="col-md-2 control-label">Código de Atendimento<h11>*</h11></label>
+                                                        <div class="col-md-4">
+                                                            <input id="codigoAtendimento" name="codigoAtendimento" class="form-control" placeholder="Exemplo: 0000252017" required="" type="text" readonly="readonly">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="tipo" class="col-xs-2 control-label">Tipo<h11>*</h11></label>                                          
+                                                            <div class="col-xs-10 selectContainer">
+                                                                <select class="form-control" name="tipo" disabled>
+                                                                    <option value="0">Choose a color</option>
+                                                                    <option value="1">Black</option>
+                                                                    <option value="2">Green</option>
+                                                                    <option value="3">Red</option>
+                                                                    <option value="4">Yellow</option>
+                                                                    <option value="5">White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label for="Descricao" class="col-md-2 control-label">Descrição <h11>*</h11></label>
+                                                        <div class="col-md-7">
+                                                            <input id="descricao" name="descricao" class="form-control" placeholder="Descrição do Atendimento" required="" type="text" readonly="readonly">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group"><!-- pensar num nome melhor pro id desse campo -->
+                                                        <label for="userAtendimento" class="col-md-2 control-label">Nome do usuário que solicitou suporte <h11>*</h11></label>
+                                                        <div class="col-md-7">
+                                                            <input id="userAtendimento" name="userAtendimento" class="form-control" required="" type="text" readonly="readonly">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="solucao" class="col-md-2 control-label">Solução <h11>*</h11></label>
+                                                        <div class="col-md-8">
+                                                            <textarea name="solucao" class="form-control" id="solucao" cols="91" rows="10" placeholder="Descrição detalhada da solução dada ao problema apresentado pelo usuário."></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">                                        
+                                                        <label for="Status" class="col-md-2 control-label">Status <h11>*</h11></label>
+                                                        <div class="selectContainer">
+                                                            <div class="col-md-3">
+                                                                <select class="form-control" name="status">
+                                                                    <option value="0">Não Resolvido</option>
+                                                                    <option value="1">Pendente (Aguardando resposta do desenvolvimento)</option>
+                                                                    <option value="2">Resolvido</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>                                    
+                                                    </div>
+                                                </div>                                
+                                            </div>                    
+                                        </fieldset>
+                                    </form>                                   
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Confirmar</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim Modal Editar-->
+
+
+
+                    <!-- Modal Excluir -->
+                    <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="modalLabel">Excluir Item</h4>
+                                </div>
+                                <div class="modal-body">Deseja realmente excluir este item? </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Sim</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim Modal -->
+    
+                    </div><!-- Fim Tabela de Clientes --> 
+                </div>
+            </div> <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->
 

@@ -49,90 +49,10 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu alert-dropdown">
-                        <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">View All</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                            <a href="perfilUsuario.html"><i class="fa fa-fw fa-user"></i> Perfil</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-fw fa-wrench"></i> Configurações</a>
@@ -219,8 +139,8 @@
 
                                     <div class="form-group">
                                         <label for="Codigo" class="col-md-2 control-label">Código <h11>*</h11></label>
-                                        <div class="col-md-2">
-                                            <input id="Razao" name="codigo" placeholder="" class="form-control input-md" required="" type="text">                                     
+                                        <div class="col-md-3">
+                                            <input id="Codigo" name="codigo" placeholder="" class="form-control input-md" required="" type="text">                                     
                                         </div>
                                     </div>
 
@@ -235,7 +155,7 @@
                                     <!-- Telefones -->
                                     <div class="form-group">
                                         <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
-                                        <div class="col-md-2">
+                                        <div class="col-md-3">
                                             <div class="input-group">
                                               <span class="input-group-addon"><i class="fa fa-phone"></i></span>
                                               <input id="telefone" name="telefone" class="form-control" placeholder="XX XXXX-XXXX" required="" type="text" maxlength="12" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
@@ -244,7 +164,7 @@
                                         </div>
                                           
                                         <label class="col-md-1 control-label" for="prependedtext">Celular</label>
-                                        <div class="col-md-2">
+                                        <div class="col-md-3">
                                             <div class="input-group">
                                               <span class="input-group-addon"><i class="fa fa-phone"></i></span>
                                               <input id="celular" name="celular" class="form-control" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
@@ -267,10 +187,10 @@
                                     <!-- Endereço -->
                                     <div class="form-group">
                                       <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
-                                      <div class="col-md-2">
-                                        <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
-                                      </div>
-                                      <div class="col-md-2">
+                                        <div class="col-md-2">
+                                            <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="9" pattern="\d{5}-?\d{3}">
+                                        </div>
+                                        <div class="col-md-2">
                                           <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
                                         </div>
                                     </div>
